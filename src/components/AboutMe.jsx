@@ -23,21 +23,21 @@ export default function AboutMe() {
                         <div class="collapse-title font-bold text-mono">
                             <p class="text-zinc-400">prueba</p>
                         </div>
-                        <div class="collapse-content text-sm">contenido</div>
+                        <div class="collapse-content text-sm text-slate-50">contenido</div>
                     </div>
                     <div class="collapse bg-linear-250 from-zinc-900 to-zinc-950 rounded-xl">
                         <input type="radio" name="my-accordion-1" />
                         <div class="collapse-title font-bold text-mono">
                             <p class="text-zinc-400">prueba</p>
                         </div>
-                        <div class="collapse-content text-sm">prueba</div>
+                        <div class="collapse-content text-sm text-slate-50">prueba</div>
                     </div>
                     <div class="collapse bg-linear-250 from-zinc-900 to-zinc-950 rounded-xl">
                         <input type="radio" name="my-accordion-1" />
                         <div class="collapse-title font-bold text-mono">
                             <p class="text-zinc-400">prueba</p>
                         </div>
-                        <div class="collapse-content text-sm">prueba</div>
+                        <div class="collapse-content text-sm text-slate-50">prueba</div>
                     </div>
                 </div>
             </div>

@@ -36,7 +36,7 @@ export default function TimeLine() {
                             >
                                 Técnico en Programación de Software
                             </p>
-                            <p class="text-base md:text-base">
+                            <p class="text-base md:text-base text-slate-50">
                                 Desarrollé un sitio web para la gestión de ventas,
                                 catálogo y compra de medicamentos para una droguería.
                                 Este proyecto permitió digitalizar los procesos internos
@@ -72,7 +72,7 @@ export default function TimeLine() {
                             <p class="font-mono italic text-zinc-400">
                                 Tecnólogo en Análisis y Desarrollo de Software
                             </p>
-                            <p class="text-base md:text-base">
+                            <p class="text-base md:text-base text-slate-50">
                                 Junto a mi equipo, desarrollamos un sitio web para un
                                 restaurante de comida rápida como parte del proyecto Mr.
                                 Homero. El objetivo fue mejorar la gestión de ventas,
@@ -110,7 +110,7 @@ export default function TimeLine() {
                             <p class="font-mono italic text-zinc-400">
                                 Tecnólogo en Análisis y Desarrollo de Software
                             </p>
-                            <p class="text-base md:text-base">
+                            <p class="text-base md:text-base text-slate-50">
                                 Desarrollamos una aplicación móvil para el mismo
                                 restaurante del proyecto Mr. Homero, reutilizando la API
                                 existente para gestionar ventas, fidelización de
