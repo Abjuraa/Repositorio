@@ -33,8 +33,8 @@ export default function Navbar() {
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost text-slate-50">{ t("navbar.language")}</div>
                         <ul className="dropdown-content menu rounded-box z-1 w-25 p-2 mt-4 shadow-sm bg-primary">
-                            <li><button onClick={() => i18n.changeLanguage('es')}>Español</button></li>
-                            <li><button onClick={() => i18n.changeLanguage('en')}>Ingles</button></li>
+                            <li className="text-slate-50"><button onClick={() => i18n.changeLanguage('es')}>Español</button></li>
+                            <li className="text-slate-50"><button onClick={() => i18n.changeLanguage('en')}>Ingles</button></li>
                         </ul>
                     </div>
                 </div>

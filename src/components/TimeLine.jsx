@@ -28,7 +28,7 @@ export default function TimeLine() {
                             <time class="font-mono italic text-zinc-400">
                                 Marzo 2022 - Noviembre 2023
                             </time>
-                            <div class="font-black font-mono text-sm md:text-lg">
+                            <div class="font-black font-mono text-sm text-slate-50 md:text-lg">
                                 BKD
                             </div>
                             <p
@@ -66,7 +66,7 @@ export default function TimeLine() {
                             <time class="font-mono italic text-zinc-400">
                                 febrero 2024 - Marzo 2025</time
                             >
-                            <div class="font-black font-mono text-sm md:text-lg">
+                            <div class="font-black font-mono text-sm text-slate-50 md:text-lg">
                                 Mr.Homero Web
                             </div>
                             <p class="font-mono italic text-zinc-400">
@@ -104,7 +104,7 @@ export default function TimeLine() {
                             <time class="font-mono italic text-zinc-400">
                                 Marzo 2025 - Mayo 2025</time
                             >
-                            <div class="font-black font-mono text-sm md:text-lg">
+                            <div class="font-black font-mono text-sm text-slate-50 md:text-lg">
                                 Mr.Homero App
                             </div>
                             <p class="font-mono italic text-zinc-400">
