@@ -1,0 +1,20 @@
+{
+    "navbar": {
+        "home": "Home",
+        "about": "About Me",
+        "projects": "Projects",
+        "contact": "Contact Me",
+        "language": "Language"
+    },
+
+    "hero": {
+        "iam": "Hello. I am Bryam",
+        "developer": "Full Stack Developer",
+        "presentation": "I am a full stack web developer with experience in creating dynamic and responsive web applications. I specialize in technologies such as React, Node.js, and SQL and NoSQL databases. I am passionate about building efficient and scalable solutions that provide an exceptional user experience."
+    },
+
+    "aboutMe": {
+        "title": "About Me",
+        "description": "I am a full stack web developer with experience in creating dynamic and responsive web applications. I specialize in technologies such as React, Node.js, and SQL and NoSQL databases. I am passionate about building efficient and scalable solutions that provide an exceptional user experience. I am always looking to learn new technologies and improve my skills to stay up-to-date in the field of web development."
+    }
+}

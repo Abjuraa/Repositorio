@@ -1,0 +1,20 @@
+{
+    "navbar": {
+        "home": "Inicio",
+        "about": "Sobre mi",
+        "projects": "Proyectos",
+        "contact": "Contactame",
+        "language": "Idioma"
+    },
+
+    "hero": {
+        "iam": "Hola. Yo soy Bryam",
+        "developer": "Desarrollador Full Stack",
+        "presentation": "Soy un desarrollador web full stack con experiencia en la creación de aplicaciones web dinámicas y receptivas. Me especializo en tecnologías como React, Node.js y bases de datos SQL y NoSQL. Estoy apasionado por construir soluciones eficientes y escalables que brinden una experiencia de usuario excepcional."
+    },
+
+    "aboutMe": {
+        "title": "Sobre Mi",
+        "description": "Soy un desarrollador web full stack con experiencia en la creación de aplicaciones web dinámicas y receptivas. Me especializo en tecnologías como React, Node.js y bases de datos SQL y NoSQL. Estoy apasionado por construir soluciones eficientes y escalables que brinden una experiencia de usuario excepcional. Siempre estoy buscando aprender nuevas tecnologías y mejorar mis habilidades para mantenerme actualizado en el campo del desarrollo web."
+    }
+}
