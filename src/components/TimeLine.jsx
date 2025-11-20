@@ -6,15 +6,15 @@ export default function TimeLine() {
             </div>
             <div className="mt-10">
                 <ul
-                    class="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical"
+                    className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical"
                 >
                     <li>
-                        <div class="timeline-middle">
+                        <div className="timeline-middle">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 20 20"
                                 fill="currentColor"
-                                class="h-5 w-5"
+                                className="h-5 w-5 text-slate-50"
                             >
                                 <path
                                     fill-rule="evenodd"
@@ -23,20 +23,20 @@ export default function TimeLine() {
                             </svg>
                         </div>
                         <div
-                            class="timeline-start mb-10 text-xs md:text-base md:text-end"
+                            className="timeline-start mb-10 text-xs md:text-base md:text-end"
                         >
-                            <time class="font-mono italic text-zinc-400">
+                            <time className="font-mono italic text-zinc-400">
                                 Marzo 2022 - Noviembre 2023
                             </time>
-                            <div class="font-black font-mono text-sm text-slate-50 md:text-lg">
+                            <div className="font-black font-mono text-sm text-slate-50 md:text-lg">
                                 BKD
                             </div>
                             <p
-                                class="font-mono italic text-zinc-400 text-xs md:text-base"
+                                className="font-mono italic text-zinc-400 text-xs md:text-base"
                             >
                                 Técnico en Programación de Software
                             </p>
-                            <p class="text-base md:text-base text-slate-50">
+                            <p className="text-base md:text-base text-slate-50">
                                 Desarrollé un sitio web para la gestión de ventas,
                                 catálogo y compra de medicamentos para una droguería.
                                 Este proyecto permitió digitalizar los procesos internos
@@ -49,12 +49,12 @@ export default function TimeLine() {
                     </li>
                     <li>
                         <hr />
-                        <div class="timeline-middle">
+                        <div className="timeline-middle">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 20 20"
                                 fill="currentColor"
-                                class="h-5 w-5"
+                                className="h-5 w-5 text-slate-50"
                             >
                                 <path
                                     fill-rule="evenodd"
@@ -62,17 +62,17 @@ export default function TimeLine() {
                                     clip-rule="evenodd"></path>
                             </svg>
                         </div>
-                        <div class="timeline-end max-w-140 mb-10 text-xs md:text-base">
-                            <time class="font-mono italic text-zinc-400">
+                        <div className="timeline-end max-w-140 mb-10 text-xs md:text-base">
+                            <time className="font-mono italic text-zinc-400">
                                 febrero 2024 - Marzo 2025</time
                             >
-                            <div class="font-black font-mono text-sm text-slate-50 md:text-lg">
+                            <div className="font-black font-mono text-sm text-slate-50 md:text-lg">
                                 Mr.Homero Web
                             </div>
-                            <p class="font-mono italic text-zinc-400">
+                            <p className="font-mono italic text-zinc-400">
                                 Tecnólogo en Análisis y Desarrollo de Software
                             </p>
-                            <p class="text-base md:text-base text-slate-50">
+                            <p className="text-base md:text-base text-slate-50">
                                 Junto a mi equipo, desarrollamos un sitio web para un
                                 restaurante de comida rápida como parte del proyecto Mr.
                                 Homero. El objetivo fue mejorar la gestión de ventas,
@@ -85,12 +85,12 @@ export default function TimeLine() {
                     </li>
                     <li>
                         <hr />
-                        <div class="timeline-middle">
+                        <div className="timeline-middle">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 20 20"
                                 fill="currentColor"
-                                class="h-5 w-5"
+                                className="h-5 w-5 text-slate-50"
                             >
                                 <path
                                     fill-rule="evenodd"
@@ -99,18 +99,18 @@ export default function TimeLine() {
                             </svg>
                         </div>
                         <div
-                            class="timeline-start mb-10 text-xs md:text-base md:text-end"
+                            className="timeline-start mb-10 text-xs md:text-base md:text-end"
                         >
-                            <time class="font-mono italic text-zinc-400">
+                            <time className="font-mono italic text-zinc-400">
                                 Marzo 2025 - Mayo 2025</time
                             >
-                            <div class="font-black font-mono text-sm text-slate-50 md:text-lg">
+                            <div className="font-black font-mono text-sm text-slate-50 md:text-lg">
                                 Mr.Homero App
                             </div>
-                            <p class="font-mono italic text-zinc-400">
+                            <p className="font-mono italic text-zinc-400">
                                 Tecnólogo en Análisis y Desarrollo de Software
                             </p>
-                            <p class="text-base md:text-base text-slate-50">
+                            <p className="text-base md:text-base text-slate-50">
                                 Desarrollamos una aplicación móvil para el mismo
                                 restaurante del proyecto Mr. Homero, reutilizando la API
                                 existente para gestionar ventas, fidelización de

@@ -14,7 +14,7 @@ export default function Hero() {
 
                 <div className="flex flex-col w-[1200px]">
                     <p className="subtitle pb-4">{t("hero.iam")}</p>
-                    <h1 className="text-5xl font-bold mt-2 font-lato text-slate-50">{t("hero.developer")}</h1>
+                    <Typewriter />
                     <div className="flex flex-row gap-4 pt-10">
                         <a href="https://github.com/Abjuraa" className='icon-color' target='_blank'><Github width={30} height={30} /></a>
                         <a href="https://www.linkedin.com/in/bryam-casta%C3%B1eda-cuervo-7337482a3/" className='icon-color' target='_blank'><Linkedin width={30} height={30} /></a>

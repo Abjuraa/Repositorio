@@ -13,7 +13,13 @@ export default function Typewriter() {
             waitUntilVisible: true,
             lifeLike: true,
         })
-            .type("Prueba")
+            .type("Frontend Developer")
+            .pause(1500)
+            .delete()
+            .type("Backend Developer")
+            .pause(1500)
+            .delete()
+            .type(`Web Developer`)
             .pause(1500)
             .delete()
             .go();
@@ -24,6 +30,6 @@ export default function Typewriter() {
     }, []);
 
     return (
-        <span ref={textRef} className=""></span>
+        <span ref={textRef} className="text-5xl font-bold mt-2 font-lato text-slate-50"></span>
     );
 }
