@@ -1,13 +1,15 @@
 import languagesConst from '../const/Languages'
+import { useTranslation } from 'react-i18next';
 
 export default function Languages() {
     const firstRow = languagesConst.slice(0, 7);
     const secondRow = languagesConst.slice(7)
+    const { t } = useTranslation();
 
     return (
         <div className="w-full max-w-7xl mx-auto px-6 mt-20">
             <div className="text-center text-zinc-400 font-semibold text-lg border-b border-gray-500 pb-5 mx-20 ">
-                <p>Tecnologias</p>
+                <p>{ t("technologies.title")}</p>
             </div>
             <div className="flex flex-row align-center justify-center gap-10 mt-10 flex-wrap">
                 {firstRow.map((l) => (

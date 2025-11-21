@@ -1,13 +1,16 @@
 import { useState } from 'react';
 import ProjectsConst from '../const/Projects';
 import Github from '../assets/icons/github_dark.svg';
+import { useTranslation } from 'react-i18next';
 
 export default function Projects() {
+
+    const { t } = useTranslation();
 
     return (
         <div className="w-full max-w-7xl mx-auto px-6 mt-20">
             <p className="text-center text-zinc-400 font-semibold text-lg border-b border-gray-500 pb-5 mx-20 ">
-                Proyectos
+                { t("projects.title")}
             </p>
             <div className="flex flex-col mt-10 mx-40 ">
                 {ProjectsConst.map((p) => {
@@ -28,7 +31,7 @@ export default function Projects() {
                                     className={`flex flex-row mt-5 overflow-hidden transition-all duration-300 ease-in-out`}
                                 >
                                     <p className='text-zinc-400 text-sm pe-3 font-semibold'>
-                                        {p.description}
+                                        {t(p.description)}
                                     </p>
                                 </div>
                                 <div className="flex flex-row my-5 gap-3">
@@ -47,7 +50,7 @@ export default function Projects() {
                                         href={p.linkCode}
                                         target='_blank'
                                         className='rounded-xl border-1 border-zinc-800 p-2 font-bold font-mono text-sm w-30 h-10 text-center text-zinc-400 hover:bg-zinc-100 hover:text-zinc-900 transition-colors'>
-                                        Codigo
+                                        {t("projects.code")}
                                     </a>
                                 </div>
                             </div>
@@ -61,7 +64,7 @@ export default function Projects() {
                     href="https://github.com/Abjuraa?tab=repositories"
                     target='_blank'
                 >
-                    <p className='text-center text-zinc-400 font-semibold'>Mas proyectos en github</p>
+                    <p className='text-center text-zinc-400 font-semibold'>{ t("projects.github")}</p>
                     <img src={Github} alt="" className="w-6 h-6" />
                 </a>
             </div>

@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { useTranslation } from 'react-i18next';
 import Alert from './Alert';
 
 export default function ContactMe() {
@@ -6,6 +7,7 @@ export default function ContactMe() {
     const [asunto, setAsunto] = useState('');
     const [mensaje, setMensaje] = useState('');
     const [alert, setAlert] = useState(null);
+    const { t } = useTranslation();
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -51,38 +53,40 @@ export default function ContactMe() {
 
     return (
         <div className="w-full max-w-6xl mx-auto px-6 mt-20 mb-20">
-            <p className="text-center text-zinc-400 font-semibold text-lg border-b border-gray-500 pb-5 mx-20 ">Contactame</p>
+            <p className="text-center text-zinc-400 font-semibold text-lg border-b border-gray-500 pb-5 mx-20 ">
+                { t("contact.title")}
+            </p>
 
             {alert && < Alert message={alert.message} icon={alert.icon} />}
 
             <form onSubmit={handleSubmit} className="flex flex-col border bg-linear-400 from-zinc-900 to-zinc-950 border-zinc-800 rounded-lg my-20 p-10 gap-5 mx-20">
                 <div className="flex flex-col gap-2">
-                    <h1 className='text-zinc-400 font-semibold text-lg'>Correo</h1>
+                    <h1 className='text-zinc-400 font-semibold text-lg'>{ t("contact.email.title")}</h1>
                     <input
                         className="border border-zinc-700 text-zinc-400 rounded-lg py-2 px-3"
                         type="email"
-                        placeholder="Ingresa tu correo"
+                        placeholder={ t("contact.email.placeholder")}
                         value={correo}
                         onChange={e => setCorreo(e.target.value)}
                     />
                 </div>
                 <div className="flex flex-col gap-2">
-                    <h1 className='text-zinc-400 font-semibold text-lg'>Asunto</h1>
+                    <h1 className='text-zinc-400 font-semibold text-lg'>{ t("contact.subject.title")}</h1>
 
                     <input
                         className="border border-zinc-700 text-zinc-400 rounded-lg py-2 px-3"
                         type="text"
-                        placeholder="Ingresa el asunto"
+                        placeholder={ t("contact.subject.placeholder")}
                         value={asunto}
                         onChange={(e) => setAsunto(e.target.value)}
                     />
                 </div>
 
                 <div className="flex flex-col gap-2">
-                    <h1 className='text-zinc-400 font-semibold text-lg'>Mensaje</h1>
+                    <h1 className='text-zinc-400 font-semibold text-lg'>{ t("contact.message.title")}</h1>
                     <textarea
                         className='flex border border-zinc-700 text-zinc-400 rounded-lg px-3 min-h-[150px] py-2'
-                        placeholder='Escribe tu mensaje'
+                        placeholder={ t("contact.message.placeholder")}
                         value={mensaje}
                         onChange={(e) => setMensaje(e.target.value)}
                     />
@@ -91,7 +95,7 @@ export default function ContactMe() {
                     <button
                         className=" flex items-center justify-center bg-slate-50 text-slate-900 px-4 py-2 rounded-md font-semibold hover:bg-slate-100 cursor-pointer gap-3 hover:scale-102 transition-transform"
                         type='submit'
-                    >Enviar
+                    >{ t("contact.button")}
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                             <rect width="24" height="24" fill="none" />
                             <defs>

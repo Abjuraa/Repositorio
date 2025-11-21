@@ -1,8 +1,13 @@
+import { useTranslation } from "react-i18next"
+
 export default function TimeLine() {
+
+    const { t } = useTranslation();
+
     return (
         <div className="w-full max-w-7xl mx-auto px-6 mt-20">
             <div className="text-center text-zinc-400 font-semibold text-lg border-b border-gray-500 pb-5 mx-20 ">
-                <p>Experiencia</p>
+                <p>{t("experience.title")}</p>
             </div>
             <div className="mt-10">
                 <ul
@@ -26,7 +31,7 @@ export default function TimeLine() {
                             className="timeline-start mb-10 text-xs md:text-base md:text-end"
                         >
                             <time className="font-mono italic text-zinc-400">
-                                Marzo 2022 - Noviembre 2023
+                                {t("experience.bkd.date")}
                             </time>
                             <div className="font-black font-mono text-sm text-slate-50 md:text-lg">
                                 BKD
@@ -34,15 +39,10 @@ export default function TimeLine() {
                             <p
                                 className="font-mono italic text-zinc-400 text-xs md:text-base"
                             >
-                                Técnico en Programación de Software
+                                {t("experience.bkd.work")}
                             </p>
                             <p className="text-base md:text-base text-slate-50">
-                                Desarrollé un sitio web para la gestión de ventas,
-                                catálogo y compra de medicamentos para una droguería.
-                                Este proyecto permitió digitalizar los procesos internos
-                                de la empresa, facilitar la venta en línea y mejorar la
-                                visibilidad del negocio, incluyendo la opción de
-                                domicilios para los clientes.
+                                {t("experience.bkd.description")}
                             </p>
                         </div>
                         <hr />
@@ -64,21 +64,16 @@ export default function TimeLine() {
                         </div>
                         <div className="timeline-end max-w-140 mb-10 text-xs md:text-base">
                             <time className="font-mono italic text-zinc-400">
-                                febrero 2024 - Marzo 2025</time
-                            >
+                                {t("experience.mrHomero.date")}
+                            </time>
                             <div className="font-black font-mono text-sm text-slate-50 md:text-lg">
                                 Mr.Homero Web
                             </div>
                             <p className="font-mono italic text-zinc-400">
-                                Tecnólogo en Análisis y Desarrollo de Software
+                                {t("experience.mrHomero.work")}
                             </p>
                             <p className="text-base md:text-base text-slate-50">
-                                Junto a mi equipo, desarrollamos un sitio web para un
-                                restaurante de comida rápida como parte del proyecto Mr.
-                                Homero. El objetivo fue mejorar la gestión de ventas,
-                                fortalecer la fidelización de clientes y optimizar el
-                                manejo de pedidos, aportando soluciones tecnológicas
-                                adaptadas a las necesidades del negocio.
+                                {t("experience.mrHomero.description")}
                             </p>
                         </div>
                         <hr />
@@ -102,21 +97,16 @@ export default function TimeLine() {
                             className="timeline-start mb-10 text-xs md:text-base md:text-end"
                         >
                             <time className="font-mono italic text-zinc-400">
-                                Marzo 2025 - Mayo 2025</time
-                            >
+                                {t("experience.mrHomeroApp.date")}
+                            </time>
                             <div className="font-black font-mono text-sm text-slate-50 md:text-lg">
                                 Mr.Homero App
                             </div>
                             <p className="font-mono italic text-zinc-400">
-                                Tecnólogo en Análisis y Desarrollo de Software
+                                {t("experience.mrHomeroApp.work")}
                             </p>
                             <p className="text-base md:text-base text-slate-50">
-                                Desarrollamos una aplicación móvil para el mismo
-                                restaurante del proyecto Mr. Homero, reutilizando la API
-                                existente para gestionar ventas, fidelización de
-                                clientes y manejo de pedidos. Esta app complementa el
-                                sitio web, ofreciendo una experiencia más accesible y
-                                optimizada para dispositivos móviles.
+                                {t("experience.mrHomeroApp.description")}
                             </p>
                         </div>
                         <hr />

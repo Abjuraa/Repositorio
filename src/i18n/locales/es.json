@@ -6,15 +6,76 @@
         "contact": "Contactame",
         "language": "Idioma"
     },
-
     "hero": {
         "iam": "Hola. Yo soy Bryam",
         "developer": "Desarrollador Full Stack",
         "presentation": "Soy un desarrollador web full stack con experiencia en la creación de aplicaciones web dinámicas y receptivas. Me especializo en tecnologías como React, Node.js y bases de datos SQL y NoSQL. Estoy apasionado por construir soluciones eficientes y escalables que brinden una experiencia de usuario excepcional."
     },
-
     "aboutMe": {
         "title": "Sobre Mi",
-        "description": "Soy un desarrollador web full stack con experiencia en la creación de aplicaciones web dinámicas y receptivas. Me especializo en tecnologías como React, Node.js y bases de datos SQL y NoSQL. Estoy apasionado por construir soluciones eficientes y escalables que brinden una experiencia de usuario excepcional. Siempre estoy buscando aprender nuevas tecnologías y mejorar mis habilidades para mantenerme actualizado en el campo del desarrollo web."
+        "description": "Soy un desarrollador web full stack con experiencia en la creación de aplicaciones web dinámicas y receptivas. Me especializo en tecnologías como React, Node.js y bases de datos SQL y NoSQL. Estoy apasionado por construir soluciones eficientes y escalables que brinden una experiencia de usuario excepcional. Siempre estoy buscando aprender nuevas tecnologías y mejorar mis habilidades para mantenerme actualizado en el campo del desarrollo web.",
+        "firstCollapse": {
+            "title": "Experiencia",
+            "content": "I have worked on various projects ranging from small business websites to large-scale web applications. My experience includes front-end and back-end development, database management, and deployment."
+        },
+        "secondCollapse": {
+            "title": "Experiencia",
+            "content": "I have worked on various projects ranging from small business websites to large-scale web applications. My experience includes front-end and back-end development, database management, and deployment."
+        },
+        "threeCollapse": {
+            "title": "Experiencia",
+            "content": "I have worked on various projects ranging from small business websites to large-scale web applications. My experience includes front-end and back-end development, database management, and deployment."
+        }
+    },
+    "experience": {
+        "title": "Experiencia",
+        "bkd": {
+            "date": "Marzo 2022 - Noviembre 2023",
+            "work": "Técnico en Programación de Software",
+            "description": "Desarrollé un sitio web para la gestión de ventas, catálogo y compra de medicamentos para una droguería. Este proyecto permitió digitalizar los procesos internos de la empresa, facilitar la venta en línea y mejorar la visibilidad del negocio, incluyendo la opción de domicilios para los clientes."
+        },
+        "mrHomero": {
+            "date": "febrero 2024 - Marzo 2025",
+            "work": "Tecnólogo en Análisis y Desarrollo de Software",
+            "description": "Junto a mi equipo, desarrollamos un sitio web para un restaurante de comida rápida como parte del proyecto Mr. Homero. El objetivo fue mejorar la gestión de ventas, fortalecer la fidelización de clientes y optimizar el manejo de pedidos, aportando soluciones tecnológicas adaptadas a las necesidades del negocio."
+        },
+        "mrHomeroApp": {
+            "date": "Marzo 2025 - Mayo 2025",
+            "work": "Tecnólogo en Análisis y Desarrollo de Software",
+            "description": "Desarrollamos una aplicación móvil para el mismo restaurante del proyecto Mr. Homero, reutilizando la API existente para gestionar ventas, fidelización de clientes y manejo de pedidos. Esta app complementa el sitio web, ofreciendo una experiencia más accesible y optimizada para dispositivos móviles."
+        }
+    },
+    "technologies": {
+        "title": "Tecnologías"
+    },
+    "projects": {
+        "title": "Proyectos",
+        "bkd": {
+            "description": "BKD es una empresa de venta de medicamentos, donde se gestiona las ventas, catálogo y compra de medicamentos para una droguería."
+        },
+        "mrHomero": {
+            "description": "Mr.Homero es un aplicativo web y movil desarrollado para un restaurante de comida rapida, con el fin de mejorar la gestión de ventas, fidelización de clientes y optimizar el manejo de pedidos."
+        },
+        "mrHomeroApp": {
+            "description": "Mr.Homero es un aplicativo web y movil desarrollado para un restaurante de comida rapida, con el fin de mejorar la gestión de ventas, fidelización de clientes y optimizar el manejo de pedidos."
+        },
+        "code": "Código",
+        "github": "Más proyectos en github"
+    },
+    "contact": {
+        "title": "Contactame",
+        "email": {
+            "title": "Correo",
+            "placeholder": "Ingresa tu correo"
+        },
+        "subject": {
+            "title": "Asunto",
+            "placeholder": "Inhresa el asunto"
+        },
+        "message": {
+            "title": "Mensaje",
+            "placeholder": "Escribe tu mensaje"
+        },
+        "button": "Enviar Correo"
     }
 }
