@@ -2,14 +2,9 @@ import { Resend } from 'resend';
 import dotenv from 'dotenv';
 import express from 'express';
 import cors from 'cors'
-import path from 'path'
-import { fileURLToPath } from 'url';
 
 dotenv.config()
 
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
 const app = express()
 const port = process.env.PORT || 4000
 const resend = new Resend(process.env.RESEND_API_KEY)
@@ -22,11 +17,6 @@ app.use(cors({
     allowedHeaders: ["Content-Type", "Authorization"]
 }))
 
-app.use(express.static(path.join(__dirname, '../dist')));
-
-app.get('(.*)', (req, res) => {
-    res.sendFile(path.join(__dirname, 'dist', 'index.html'));
-});
 
 app.post('/api/send-email', async (req, res) => {
     try {
