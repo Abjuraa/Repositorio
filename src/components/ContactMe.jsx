@@ -12,7 +12,7 @@ export default function ContactMe() {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        const response = await fetch('http://localhost:3000/resend/email', {
+        const response = await fetch('https://portafolio-backend-kxsp.onrender.com/api/mail-service', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
