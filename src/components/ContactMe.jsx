@@ -3,21 +3,21 @@ import { useTranslation } from 'react-i18next';
 import Alert from './Alert';
 
 export default function ContactMe() {
-    const [correo, setCorreo] = useState('');
-    const [asunto, setAsunto] = useState('');
-    const [mensaje, setMensaje] = useState('');
+    const [email, setEmail] = useState('');
+    const [subject, setSubject] = useState('');
+    const [content, setContent] = useState('');
     const [alert, setAlert] = useState(null);
     const { t } = useTranslation();
 
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        const response = await fetch('http://localhost:4000/api/send-email', {
+        const response = await fetch('http://localhost:3000/resend/email', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({ correo, asunto, mensaje }),
+            body: JSON.stringify({ email, subject, content }),
         })
 
         const data = await response.json();
@@ -28,11 +28,11 @@ export default function ContactMe() {
                 message: 'Correo enviado exitosamente',
                 icon: "M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
             })
-            setCorreo('');
-            setAsunto('');
-            setMensaje('');
+            setEmail('');
+            setSubject('');
+            setContent('');
         }
-        else if (!correo || !asunto || !mensaje) {
+        else if (!email || !subject || !content) {
             setAlert({
                 color: "alert-warning",
                 message: 'Todos los campos son obligatorios',
@@ -66,8 +66,8 @@ export default function ContactMe() {
                         className="border border-zinc-700 text-zinc-400 rounded-lg py-2 px-3"
                         type="email"
                         placeholder={ t("contact.email.placeholder")}
-                        value={correo}
-                        onChange={e => setCorreo(e.target.value)}
+                        value={email}
+                        onChange={e => setEmail(e.target.value)}
                     />
                 </div>
                 <div className="flex flex-col gap-2">
@@ -77,8 +77,8 @@ export default function ContactMe() {
                         className="border border-zinc-700 text-zinc-400 rounded-lg py-2 px-3"
                         type="text"
                         placeholder={ t("contact.subject.placeholder")}
-                        value={asunto}
-                        onChange={(e) => setAsunto(e.target.value)}
+                        value={subject}
+                        onChange={(e) => setSubject(e.target.value)}
                     />
                 </div>
 
@@ -87,8 +87,8 @@ export default function ContactMe() {
                     <textarea
                         className='flex border border-zinc-700 text-zinc-400 rounded-lg px-3 min-h-[150px] py-2'
                         placeholder={ t("contact.message.placeholder")}
-                        value={mensaje}
-                        onChange={(e) => setMensaje(e.target.value)}
+                        value={content}
+                        onChange={(e) => setContent(e.target.value)}
                     />
                 </div>
                 <div className="flex flex-col">
