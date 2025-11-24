@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import TypeIt from "typeit";
 
+
 export default function Typewriter() {
     const textRef = useRef(null);
 
@@ -30,6 +31,6 @@ export default function Typewriter() {
     }, []);
 
     return (
-        <span ref={textRef} className="text-5xl font-bold mt-2 font-lato text-slate-50"></span>
+        <span ref={textRef} className="text-4xl md:text-5xl font-bold md:mt-2 text-slate-50"></span>
     );
 }

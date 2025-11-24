@@ -70,12 +70,17 @@
         },
         "subject": {
             "title": "Asunto",
-            "placeholder": "Inhresa el asunto"
+            "placeholder": "Ingresa el asunto"
         },
         "message": {
             "title": "Mensaje",
             "placeholder": "Escribe tu mensaje"
         },
-        "button": "Enviar Correo"
+        "button": "Enviar Correo",
+        "info": "El mensaje puede tardar un poco en enviarse."
+    },
+    "languages": {
+        "spanish": "Español",
+        "english": "Inglés"
     }
 }

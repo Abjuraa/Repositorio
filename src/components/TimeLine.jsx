@@ -6,7 +6,7 @@ export default function TimeLine() {
 
     return (
         <div className="w-full max-w-7xl mx-auto px-6 mt-20">
-            <div className="text-center text-zinc-400 font-semibold text-lg border-b border-gray-500 pb-5 mx-20 ">
+            <div className="text-center text-zinc-400 font-semibold text-base border-b border-gray-500 pb-5 mx-1 md:mx-20 md:text-lg">
                 <p>{t("experience.title")}</p>
             </div>
             <div className="mt-10">

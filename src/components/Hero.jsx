@@ -9,11 +9,11 @@ export default function Hero() {
     const { t } = useTranslation();
 
     return (
-        <div className="w-full max-w-6xl mx-auto px-6 mt-40">
-            <div className="flex flex-row justify-between items-center gap-20">
+        <div className="w-full max-w-6xl mx-auto px-6 mt-30 md:mt-40">
+            <div className="flex flex-col gap-14 md:flex-row md:justify-between md:items-center md:gap-20">
 
-                <div className="flex flex-col w-[1200px]">
-                    <p className="subtitle pb-4">{t("hero.iam")}</p>
+                <div className="flex flex-col md:w-[1200px]">
+                    <p className="text-sm font-semibold pb-4 text-gray-400 md:text-xl md:font-bold">{t("hero.iam")}</p>
                     <Typewriter />
                     <div className="flex flex-row gap-4 pt-10">
                         <a href="https://github.com/Abjuraa" className='icon-color' target='_blank'><Github width={30} height={30} /></a>
@@ -23,7 +23,7 @@ export default function Hero() {
                 </div>
 
                 <div className="flex flex-col max-w-md">
-                    <h1 className="text-lg font-semibold text-gray-400">{t("hero.presentation")}</h1>
+                    <h1 className="text-base font-semibold md:text-lg md:font-semibold text-gray-400">{t("hero.presentation")}</h1>
 
                 </div>
 

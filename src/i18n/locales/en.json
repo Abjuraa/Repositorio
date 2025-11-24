@@ -77,6 +77,12 @@
             "title": "Message",
             "placeholder": "Enter your message"
         },
-        "button": "Send Email"
+        "button": "Send Email",
+        "info": "The message may take a while to send."
+    },
+
+    "languages": {
+        "spanish": "Spanish",
+        "english": "English"
     }
 }

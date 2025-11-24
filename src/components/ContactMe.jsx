@@ -12,7 +12,7 @@ export default function ContactMe() {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        const response = await fetch('https://portafolio-backend-kxsp.onrender.com/api/mail-service', {
+        const response = await fetch('https://portafolio-backend-kxsp.onrender.com/api/mail-service ', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -48,45 +48,45 @@ export default function ContactMe() {
             console.log("Error al enviar el correo", data);
         }
 
-        setTimeout(() => setAlert(null), 5000);
+        setTimeout(() => setAlert(null), 5000)
     }
 
     return (
         <div className="w-full max-w-6xl mx-auto px-6 mt-20 mb-20">
-            <p className="text-center text-zinc-400 font-semibold text-lg border-b border-gray-500 pb-5 mx-20 ">
-                { t("contact.title")}
+            <p className="text-center text-zinc-400 font-semibold text-base border-b border-gray-500 pb-5 mx-1 md:mx-20 md:text-lg">
+                {t("contact.title")}
             </p>
 
             {alert && < Alert message={alert.message} icon={alert.icon} />}
 
-            <form onSubmit={handleSubmit} className="flex flex-col border bg-linear-400 from-zinc-900 to-zinc-950 border-zinc-800 rounded-lg my-20 p-10 gap-5 mx-20">
+            <form onSubmit={handleSubmit} className="flex flex-col border bg-linear-400 from-zinc-900 to-zinc-950 border-zinc-800 rounded-lg mt-20 mb-10 p-5 md:p-10 gap-5 md:mx-20">
                 <div className="flex flex-col gap-2">
-                    <h1 className='text-zinc-400 font-semibold text-lg'>{ t("contact.email.title")}</h1>
+                    <h1 className='text-zinc-400 font-semibold text-base md:text-lg'>{t("contact.email.title")}</h1>
                     <input
                         className="border border-zinc-700 text-zinc-400 rounded-lg py-2 px-3"
                         type="email"
-                        placeholder={ t("contact.email.placeholder")}
+                        placeholder={t("contact.email.placeholder")}
                         value={email}
                         onChange={e => setEmail(e.target.value)}
                     />
                 </div>
                 <div className="flex flex-col gap-2">
-                    <h1 className='text-zinc-400 font-semibold text-lg'>{ t("contact.subject.title")}</h1>
+                    <h1 className='text-zinc-400 font-semibold text-base md:text-lg'>{t("contact.subject.title")}</h1>
 
                     <input
                         className="border border-zinc-700 text-zinc-400 rounded-lg py-2 px-3"
                         type="text"
-                        placeholder={ t("contact.subject.placeholder")}
+                        placeholder={t("contact.subject.placeholder")}
                         value={subject}
                         onChange={(e) => setSubject(e.target.value)}
                     />
                 </div>
 
                 <div className="flex flex-col gap-2">
-                    <h1 className='text-zinc-400 font-semibold text-lg'>{ t("contact.message.title")}</h1>
+                    <h1 className='text-zinc-400 font-semibold text-base md:text-lg'>{t("contact.message.title")}</h1>
                     <textarea
                         className='flex border border-zinc-700 text-zinc-400 rounded-lg px-3 min-h-[150px] py-2'
-                        placeholder={ t("contact.message.placeholder")}
+                        placeholder={t("contact.message.placeholder")}
                         value={content}
                         onChange={(e) => setContent(e.target.value)}
                     />
@@ -95,7 +95,7 @@ export default function ContactMe() {
                     <button
                         className=" flex items-center justify-center bg-slate-50 text-slate-900 px-4 py-2 rounded-md font-semibold hover:bg-slate-100 cursor-pointer gap-3 hover:scale-102 transition-transform"
                         type='submit'
-                    >{ t("contact.button")}
+                    >{t("contact.button")}
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                             <rect width="24" height="24" fill="none" />
                             <defs>
@@ -108,6 +108,21 @@ export default function ContactMe() {
                     </button>
                 </div>
             </form>
+
+            <div className="flex flex-row justify-center align-center gap-2 w-full mx-auto">
+                <div className=" text-zinc-600 w-4 h-4 md:w-6 md:h-6 animate-bounce">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26">
+                        <g fill="currentColor">
+                            <path fillRule="evenodd" d="M13 5a2 2 0 0 1 2 2v7a2 2 0 1 1-4 0V7a2 2 0 0 1 2-2" clipRule="evenodd"></path>
+                            <path d="M15 19a2 2 0 1 1-4 0a2 2 0 0 1 4 0"></path>
+                            <path fillRule="evenodd" d="M13 24c6.075 0 11-4.925 11-11S19.075 2 13 2S2 6.925 2 13s4.925 11 11 11m0 2c7.18 0 13-5.82 13-13S20.18 0 13 0S0 5.82 0 13s5.82 13 13 13" clipRule="evenodd"></path>
+                        </g>
+                    </svg>
+                </div>
+
+                <h1 className='text-zinc-500 font-semibold text-xs md:text-base'>{t("contact.info")}</h1>
+            </div>
+
         </div>
     )
 }
