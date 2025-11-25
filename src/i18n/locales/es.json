@@ -76,7 +76,10 @@
             "title": "Mensaje",
             "placeholder": "Escribe tu mensaje"
         },
-        "button": "Enviar Correo",
+        "button": {
+            "send": "Enviar Mensaje",
+            "sending": "Enviando..."
+        },
         "info": "El mensaje puede tardar un poco en enviarse."
     },
     "languages": {

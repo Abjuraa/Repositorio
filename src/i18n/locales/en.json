@@ -77,10 +77,12 @@
             "title": "Message",
             "placeholder": "Enter your message"
         },
-        "button": "Send Email",
+        "button": {
+            "send": "Send Message",
+            "sending": "Sending..."
+        },
         "info": "The message may take a while to send."
     },
-
     "languages": {
         "spanish": "Spanish",
         "english": "English"
