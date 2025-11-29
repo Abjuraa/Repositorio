@@ -4,6 +4,7 @@ import Linkedin from '../assets/icons/LinkedIn';
 import Instagram from '../assets/icons/Instagram';
 import { useTranslation } from 'react-i18next';
 import Typewriter from './Typewriter';
+import CV from './ButtonCV';
 
 export default function Hero() {
     const { t } = useTranslation();
@@ -19,6 +20,7 @@ export default function Hero() {
                         <a href="https://github.com/Abjuraa" className='icon-color' target='_blank'><Github width={30} height={30} /></a>
                         <a href="https://www.linkedin.com/in/bryam-casta%C3%B1eda-cuervo-7337482a3/" className='icon-color' target='_blank'><Linkedin width={30} height={30} /></a>
                         <a href="https://www.instagram.com/_abjura/" className='icon-color' target='_blank'><Instagram width={30} height={30} /></a>
+                        <CV />
                     </div>
                 </div>
 
