@@ -6,8 +6,8 @@ export default function ButtonCV() {
     return (
         <div className="flex flex-row border-s-2 border-zinc-700 ps-2">
             <a
-                href="/Hoja_de_vida_bryam.pdf"
-                download="Hoja_de_vida_bryam.pdf"
+                href="/CV_Bryam_Cuervo.pdf"
+                download="CV_Bryam_Cuervo.pdf"
                 className="flex text-gray-400 gap-2 font-semibold items-center text-sm"
             >
                 <svg xmlns="http://www.w3.org/2000/svg" width={30} height={30} viewBox="0 0 20 20">

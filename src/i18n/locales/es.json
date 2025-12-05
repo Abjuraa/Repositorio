@@ -16,12 +16,12 @@
         "title": "Sobre Mi",
         "description": "Soy un desarrollador web full stack con experiencia en la creación de aplicaciones web dinámicas y receptivas. Me especializo en tecnologías como React, Node.js y bases de datos SQL y NoSQL. Estoy apasionado por construir soluciones eficientes y escalables que brinden una experiencia de usuario excepcional. Siempre estoy buscando aprender nuevas tecnologías y mejorar mis habilidades para mantenerme actualizado en el campo del desarrollo web.",
         "firstCollapse": {
-            "title": "Experiencia",
-            "content": "I have worked on various projects ranging from small business websites to large-scale web applications. My experience includes front-end and back-end development, database management, and deployment."
+            "title": "Objetivo",
+            "content": "Desarrollador fullstack en formación que busca construir productos eficientes y escalables que brienden una buena experiencia para los usuarios. Busco integrarme a un equipo donde pueda crecer profesionalmente mientras aporto soluciones reales e innovadoras."
         },
         "secondCollapse": {
-            "title": "Experiencia",
-            "content": "I have worked on various projects ranging from small business websites to large-scale web applications. My experience includes front-end and back-end development, database management, and deployment."
+            "title": "Metas",
+            "content": "Quiero mejorar mis habilidades de programación, conseguir un buen empleo para mejorar mi experiencia profesional y contribuir a un equipo de desarrollo innovador."
         },
         "threeCollapse": {
             "title": "Experiencia",
